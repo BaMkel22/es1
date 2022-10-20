@@ -1,90 +1,138 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 
-<style type="text/css">
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
 
-	*{
-		margin: 0;
-		padding: 0;
-	}
+		#menu {
 
-	#menu{
-		
-		display: flex;
-		justify-content: space-between;
-		color: white;
-		text-decoration: none;
+			display: flex;
+			justify-content: space-between;
+			color: white;
+			text-decoration: none;
 
-	}
+		}
 
 
-	
-	#background{
-		background-image: url(static/images/sfondo.png);
-		width: 100vw;
-		height: 100vh;
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center;
-	}
-	#menu{
-		padding-top: 70px;
-		padding-left: 80px;
-		padding-right: 100px;
-	}
-	#linkmenu a{
-		text-decoration: none;
-		margin-left: 65px;
-		font-size: 24px;
-		color: #ffff;
-	}
-	.hidden{
-		display: none;
-	}
-</style>
+
+		#background {
+			background-image: url(static/images/sfondo.png);
+			width: 100vw;
+			height: 100vh;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		#menu {
+			padding-top: 70px;
+			padding-left: 80px;
+			padding-right: 100px;
+		}
+
+		#linkmenu a {
+			text-decoration: none;
+			margin-left: 65px;
+			font-size: 24px;
+			color: #ffff;
+		}
+
+		.hidden {
+			display: none;
+		}
+		#herocontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+#titlecontainer{
+  position: relative;
+}
+#clickherebtn{
+  text-decoration: none;
+  background-color: #ffffff;
+  padding: 17px 40px 17px 40px;
+  color: black;
+  font-size: 28px;
+  font-weight: bold;
+}
+#btncontainer{
+  margin-top: 35px;
+}
+#titlecontainer{
+	border-top: 3px solid #ffffff;
+	border-bottom: 3px solid #ffffff;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+h1{
+	font-size: 74px;
+	font-weight: bold;
+	color: white;
+}
+	</style>
 
 </head>
+
 <body>
 	<div id="generale">
 		<div id="background">
-<section id="header">
-	
+			<section id="header">
 
-<div id="menu">
-	<div> <img src="static/images/Hamburger.png" id="bottone"> </div>
-	
-	<div id="linkmenu">
-		<a href="#">HomePage</a>
-		<a href="#">about</a>
-		<a href="#">contacts</a>
-	</div>
-</div>
 
-</section>			
+				<div id="menu">
+					<div> <img src="static/images/Hamburger.png" id="bottone"> </div>
+
+					<div id="linkmenu">
+						<a href="#">HomePage</a>
+						<a href="#">about</a>
+						<a href="#">contacts</a>
+					</div>
+				</div>
+
+			</section>
+
+			<section>
+				<div id="herocontainer">
+				 <div id="titlecontainer">
+					 <h1 id="pagetitle">This is my Wonderful Page</h1>
+				 </div>
+				 <div id="btncontainer">
+					 <a href="#" id="clickherebtn">Click Here</a>
+				 </div>
+				</div>	
+			 </section>
+			
 		</div>
 	</div>
 
-	
 
 
 
 
 
 
+	</section>
+	<script>
+		let click = document.querySelector('#bottone')
 
-
-
-</section>
-<script>
-	let click = document.querySelector('#bottone')
-
-	click.addEventListener("click", function(e){
-		document.querySelector('#linkmenu').classList.toggle('hidden')
-	})
-</script>
+		click.addEventListener("click", function (e) {
+			document.querySelector('#linkmenu').classList.toggle('hidden')
+		})
+	</script>
 </body>
+
 </html>
