@@ -51,17 +51,17 @@
 		.hidden {
 			display: none;
 		}
-		#herocontainer{
+		#body{
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     flex-direction: column;
 }
-#titlecontainer{
+#h1c{
   position: relative;
 }
-#clickherebtn{
+#bottonetesto{
   text-decoration: none;
   background-color: #ffffff;
   padding: 17px 40px 17px 40px;
@@ -69,10 +69,10 @@
   font-size: 28px;
   font-weight: bold;
 }
-#btncontainer{
+#sfondobottone{
   margin-top: 35px;
 }
-#titlecontainer{
+#h1c{
 	border-top: 3px solid #ffffff;
 	border-bottom: 3px solid #ffffff;
 	padding-top: 30px;
@@ -82,6 +82,17 @@ h1{
 	font-size: 74px;
 	font-weight: bold;
 	color: white;
+}
+footer{
+display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+footer #mid{
+margin-right: 35px;
+margin-left: 35px;
 }
 	</style>
 
@@ -106,16 +117,20 @@ h1{
 			</section>
 
 			<section>
-				<div id="herocontainer">
-				 <div id="titlecontainer">
-					 <h1 id="pagetitle">This is my Wonderful Page</h1>
+				<div id="body">
+				 <div id="h1c">
+					 <h1>This is my Wonderful Page</h1>
 				 </div>
-				 <div id="btncontainer">
-					 <a href="#" id="clickherebtn">Click Here</a>
+				 <div id="sfondobottone">
+					 <a href="#" id="bottonetesto">Click Here</a>
 				 </div>
 				</div>	
 			 </section>
-			
+			<footer>
+					<a href="#"><img src="static/images/image 1.png"></a>
+                    <a href="#" id="mid"><img src="static/images/image 2.png"></a>
+                    <a href="#"><img src="static/images/image 3.png"></a>
+			</footer>
 		</div>
 	</div>
 
